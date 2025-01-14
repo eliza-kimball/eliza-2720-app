@@ -8,15 +8,25 @@
     <title>My Typescript Project</title>
   </head>
   <body>
-    <main>
-      <header>
-        <h1>My Typescript Project</h1>
-      </header>
-      <div>
-        <img>
+    <main class="flex flex-col h-screen w-screen">
+
+      <div class="container mx-auto max-w-5xl">
+        <header class="text-center text-3xl text-pink-500 p-4">
+          <h1>My Typescript Project</h1>
+        </header>
+
+        <div>
+          <img>
+        </div>
+
+        <div class="bg-pink-200 p-4 rounded-2xl max-w-4xl m-2">
+          <h2 class="text-4xl text-blue-400">What is TypeScript?</h2>
+          <p class="text-blue-400 p-2">TypeScript is a programming language that adds extra functionality to JavaScript. JavaScript was never intended to drive complex frontend and backend applications. It was initially designed to add simple interactivity to websites; for example, to make clicky buttons and animate drop-down menus</p>
+          <button class="bg-pink-500 text-white rounded-md max-w-32 m-2 p-2">Get Started</button>
+        </div>
       </div>
-      <button>Get Started</button>
-      <footer>&copy; 2025 &bull; Eliza Kimball</footer>
+
+      <footer class="text-center mt-auto bg-blue-400 p-4 text-white">&copy; 2025 &bull; Eliza Kimball</footer>
     </main>
   </body>
 </html>
