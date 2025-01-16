@@ -11,6 +11,7 @@ export default defineConfig({
         emptyOutDir: true,
         rollupOptions: {
             main: resolve(root, 'index.html'),
+            basicTypes: resolve(root, 'basicTypes', 'index.html'),
         }
     },
 })

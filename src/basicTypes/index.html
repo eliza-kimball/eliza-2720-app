@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
     <script src="basic-types.ts" defer type="module"></script>
     <title>Basic TypeScript Types</title>
 </head>
-<body>
-    <h1>Basic TypeScript Types</h1>
+<body class="flex-col h-screen">
+
+    <header class="bg-blue-200">
+        <h1>Basic TypeScript Types</h1>
+    </header>
+
+    <main class="bg-blue-100 h-full flex">
+
+        <nav class="bg-green-200 max-w-40 h-full">
+            <ul>
+                <li><button class="w-32 border-2 rounded-lg hover:bg-pink-300">Basic Types</button></li>
+                <li><button class="w-32 border-2 rounded-lg hover:bg-pink-300">Array Types</button></li>
+                <li><button class="w-32 border-2 rounded-lg hover:bg-pink-300">Special Types</button></li>
+            </ul>
+        </nav>
+        <div class="flex flex-col bg-red-300 w-full">
+            <h3>Card Title</h3>
+            <p>Concept Explained</p>
+            <div>
+                <h4>Code Example</h4>
+                <pre>
+                    <code>
+const myName: string = "Eliza";
+const myAge: number = 25;
+const hasPet: boolean = true;
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-auto">
+        <p>&copy; 2025</p>
+    </footer>
 </body>
 </html>
