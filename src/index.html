@@ -1,32 +1,39 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Typescript Project</title>
   </head>
-  <body>
-    <main class="flex flex-col h-screen w-screen">
-
+  <body class="h-full flex flex-col">
+    <main class="bg-white flex-grow">
       <div class="container mx-auto max-w-5xl">
         <header class="text-center text-3xl text-pink-500 p-4">
           <h1>My Typescript Project</h1>
         </header>
 
-        <div>
-          <img>
-        </div>
-
-        <div class="bg-pink-200 p-4 rounded-2xl max-w-4xl m-2">
-          <h2 class="text-4xl text-blue-400">What is TypeScript?</h2>
-          <p class="text-blue-400 p-2">TypeScript is a programming language that adds extra functionality to JavaScript. JavaScript was never intended to drive complex frontend and backend applications. It was initially designed to add simple interactivity to websites; for example, to make clicky buttons and animate drop-down menus</p>
-          <button class="bg-pink-500 text-white rounded-md max-w-32 m-2 p-2">Get Started</button>
+      <div class="card card-side bg-blue-100 shadow-xl m-5">
+        <figure class="p-5">
+          <img class="rounded-xl"
+            src="images/sunset.jpg"
+            alt="Sunset" />
+        </figure>
+        <div class="card-body text-blue-800">
+          <h2 class="card-title">What is Typescript?</h2>
+          <p>TypeScript is a programming language that adds extra functionality
+            to JavaScript. JavaScript was never intended to drive complex
+            frontend and backend applications. It was initially designed to add
+            simple interactivity to websites.</p>
+          <div class="card-actions justify-center">
+            <button class="btn btn-primary text-white">Get Started</button>
+          </div>
         </div>
       </div>
-
-      <footer class="text-center mt-auto bg-blue-400 p-4 text-white">&copy; 2025 &bull; Eliza Kimball</footer>
     </main>
+    <footer class="text-center mt-auto bg-blue-400 p-4 text-white">
+      &copy; 2025 &bull; Eliza Kimball
+    </footer>
   </body>
 </html>
