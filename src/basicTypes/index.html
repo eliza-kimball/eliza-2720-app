@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
-    <script src="basic-types.ts" defer type="module"></script>
+    <script src="index.ts" defer type="module"></script>
     <title>Basic TypeScript Types</title>
   </head>
   <body class="flex-col h-screen">
-    <header class="bg-blue-200">
+    <header>
       <h1>Basic TypeScript Types</h1>
     </header>
 
@@ -21,12 +21,13 @@
         </ul>
       </nav>
 
-      <div class="card bg-base-100 w-96 shadow-xl h-96">
-        <div class="card-body">
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body flex-grow-0">
           <h2 class="card-title">Card Title</h2>
+          <p class="cardExplanation"></p>
           <div class="mockup-code">
             <pre>
-                        <code>
+                        <code id="cardCode">
 const myName: string = "Eliza";
 const myAge: number = 25;
 const hasPet: boolean = true;
