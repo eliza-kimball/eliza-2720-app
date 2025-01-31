@@ -19,6 +19,22 @@ export function basicTypesExample() {
     }
     }
 
+export function arrayTypesExample() {
+  return {
+      title: "Array Types in Typescript",
+      explanation: "In this section, we will learn about array types in Typescript. Here you see examples of number and string arrays.",
+      code: `//example of number array`
+  }
+}
+
+export function specialTypesExample() {
+  return {
+      title: "Special Types in Typescript",
+      explanation: "In this section, we will learn about special types in Typescript. Here you see examples of object, tuple, enum, any, void, null, undefined, and never types.",
+      code: `//example of number array`
+  }
+}
+
 /* Basic types in Typescript:
 - number
 - string
