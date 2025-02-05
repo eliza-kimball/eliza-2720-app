@@ -1,4 +1,4 @@
-import { basicTypesExample, arrayTypesExample, specialTypesExample } from "./basic-types";
+import { basicTypesNumber, basicTypesString, arrayTypesExample, specialTypesExample } from "../examples/basicTypes/examples";
 import hljs from 'highlight.js/lib/core';
 import typescript from 'highlight.js/lib/languages/typescript';
 
@@ -26,13 +26,13 @@ if (specialTypesButton) {
     specialTypesButton.addEventListener("click", () => loadExample("special"))
 }
 
-// Generic function to load the example content
+// Have loadExample function load the imported example functions
 function loadExample (exampleType: string) {
     console.log(`Loading example for ${exampleType} type`)
     let chosenExampleType
     switch (exampleType) {
         case "basic":
-            chosenExampleType = basicTypesExample()
+            chosenExampleType = basicTypesNumber()
             break
         case "array":
             chosenExampleType = arrayTypesExample()
@@ -41,7 +41,7 @@ function loadExample (exampleType: string) {
             chosenExampleType = specialTypesExample()
             break
         default:
-            chosenExampleType = basicTypesExample()
+            chosenExampleType = basicTypesNumber()
     }
     if (cardTitle && cardExplanation && cardCode) {
         cardTitle.textContent = chosenExampleType.title
@@ -53,18 +53,15 @@ function loadExample (exampleType: string) {
     }
 
 }
-
-/* if (cardTitle) {
-    cardTitle.textContent = basicTypesExample().title;
-}
-if (cardExplanation) {
-    cardExplanation.textContent = basicTypesExample().explanation;
-}
-if (cardCode) {
-    //cardCode.textContent = basicTypesExample().code;
-
-cardCode.innerHTML = hljs.highlight(
-    basicTypesExample().code,
-    { language: 'typescript' }
-  ).value
-} */
+/*
+<h2 class="card-title">Card Title</h2>
+<p class="cardExplanation"></p>
+<div class="mockup-code">
+    <pre>
+        <code id="cardCode">
+const myName: string = "Eliza";
+const myAge: number = 25;
+const hasPet: boolean = true;
+        </code>
+    </pre>
+</div> */

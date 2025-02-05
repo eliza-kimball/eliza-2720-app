@@ -12,7 +12,8 @@ export function basicTypesExample() {
     let floating: number = 6.5;
     let negative: number = -6;
 
-    // Example of string: represents a sequence of characters
+    // Example of string: 
+    // represents a sequence of characters
     let color: string = 'blue';
     color = 'red';
 `
@@ -23,7 +24,10 @@ export function arrayTypesExample() {
   return {
       title: "Array Types in Typescript",
       explanation: "In this section, we will learn about array types in Typescript. Here you see examples of number and string arrays.",
-      code: `//example of number array`
+      code: 
+`
+      //example of number array
+`
   }
 }
 
@@ -31,7 +35,10 @@ export function specialTypesExample() {
   return {
       title: "Special Types in Typescript",
       explanation: "In this section, we will learn about special types in Typescript. Here you see examples of object, tuple, enum, any, void, null, undefined, and never types.",
-      code: `//example of number array`
+      code: 
+`
+      //example of number array
+`
   }
 }
 
