@@ -81,9 +81,27 @@ let obj: object = {
 
 // Example of array: two ways to declare an array
 let list: number[] = [1, 2, 3];
+let names: string[] = ['Alice', 'Bob', 'Charlie'];
+
+//adding elements (type-safe)
+//numbers.push(4);             //OK
+// numbers.push('5');        //Error, '5' is not a number
+
+// Accessing elements
+//let firstNumber: number = numbers[0];     //OK
+// let firstString: string = numbers[0];  //Error, numbers[0] is not a string
+
+// Array Methods
+//let arrayLength: number = numbers.length; 
 
 // Example of tuple: allows you to express an array where the type of a fixed number of elements is known
-let x: [string, number];
+let person: [string, number] = ['Alice', 30];                   // Declare tuple with string and number types
+let worker: [string, number, boolean] = ['Bob', 25, true];      // Declare tuple with 3 elements
+
+// Accessing tuple elements
+let name: string = person[0];         // Accessing first element
+let age: number = person[1];          // Accessing second element
+let isEmployed: boolean = worker[2];  // Accessing third element
 
 // Example of enum: provides a way to define a set of named constants
 enum Color {
